@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Titre de la page</title>
+</head>
+
+<body>
+    <style >
+    
+     form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    
+    
+  #bome{ 
+  Background-image:url('https://i.ibb.co/zTDjGLLD/Screenshot-20251119-202102.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  border-radius:15px;
+    }
+     main {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+ .post {
+      
+     
+    
+    
+      width :250px;
+      text-align:right;
+      display: flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-bottom: 30px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+       box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    
+    body{
+        background :#f0f2f5;
+        margin:0;
+        padding:0;
+    }
+    
+    
+
+.menu-btn {
+  font-size: 28px;
+  cursor: pointer;
+  position : relative ;
+  left:90px;
+  
+}
+
+/* Menu caché */
+nav {
+  background: #444;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+nav a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #555;
+}
+</style>
+    
+    
+    
+    <header style="position:fixed;z-index:1000;top:0;left:0;width:100%;backdrop-filter:blur(10px);height:50px; display: flex;flex-wrap: wrap;gap:10px;margin-bottom:30px;background: white;padding: 15px;border-radius: 8px;box-shadow: 0 2px 4px rgba(0,0,0,0.1);border-bottom:4px solid red;" >  
+          <p style="font-size:43px;border-radius:35px;box-shadow:0 2px 4px rgba(0,0,0,0.1); background-color:red; position :fixed;">Ky</p><br><br><br><p style="color:red; position : relative ;left:50px;"><i>KYANGO SERVICES</i></p><br><br><br><br><div class="menu-btn" id="menuBtn">☰</div>
+          
+<nav id="menu">
+    <br><br><br>
+  <a href="index.html">Accueil</a>
+  <a href="#" data-target="service" class="menu-link">Services</a>
+  <a href="#" data-target="about" class="menu-link">À propos</a>
+  <a href="#" data-target="contact" class="menu-link">Contact</a>
+</nav>
+
+
+    
+    
+</header>
+    <main><br><br><br> <br><br><br><br><br>
+    
+    
+    
+    <!-- à propos -->
+    
+    <div class="section" id="about" style="background :white;width:100%;height:auto;display:flex;flex-direction:column;align-items:center;box-shadow: 0 2px 4px rgba(0,0,0,0.1);"> <br><br><br>     
+ 
+ 
+ 
+    
+     
+     <i> <strong style="font-size:24px;color:red;font-weight:250;text-decoration:underline;"><br>A propos de nous</strong>  </i><br><br><br>
+        
+        <div id="bome"><div style=" flex-wrap: wrap ;gap: 10px;border-radius: 8px;height:390px;width:320px;text-align:center;border-right:2px;box-shadow: 0 2px 4px rgba(0,0,0,0.1);" ><p style="font-size:30px;font-weight:450;color:white; ">KYANGO<br><br>
+    Une entreprise<br><br> multifonctionnelle à<br><br> votre service</p></div></div><br><br><br><br><br><br><br>
+    
+    
+    
+    
+    <!-- histoire  -->
+    <div class="leon" style=" text-align:center;background-color:red;border-radius:15px;width:300px;height:330px;" ><i><br><br><br><br><p style="color:white;">“Depuis plusieurs années,<b>KYANGO SERVICE</b> accompagne particuliers et professionnels avec des services fiables, rapides et adaptés à vos besoins.<br>Nos multiples et bons services nous permettent de garder une meilleure collaboration avec nos clients.”</p></i></div>   
+  <br><br><br><br><br><br><br>
+    
+    
+    
+  
+    <div style="display: flex;gap: 10px;margin-bottom: 30px;background: white;padding: 15px;border-radius: 8px; box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.1);height:150px;width:220px;flex-wrap:wrap;text-align:center;display:flex;flex-direction:column;align-items:center;"><p style ="color:red;font-weight:250;"><i>Nous sommes une entreprise à multiples services :pressing,mobile money, billetterie,...</i></p><button onclick="alert('pour cela veuillez nous contacter !')" style="background-color :red;border-radius:35px;width:200px;height:30px;font-size:20px;">Plus d'infos</button></div><br><br><br><br><br>
+    
+ <br></div>
+    
+    
+    <br><br>
+    
+    
+    
+    
+    
+    
+    
+    <!-- différents services -->
+    <div class="section" id="service" style="background :white;margin:0;padding:0;width:100%;height:auto;display:flex;flex-direction:column;align-items:center;box-shadow: 0 2px 4px rgba(0,0,0,0.1);"><br><br><br> <p style="font-size:24px;color:red;font-weight:250;"><i>Nos différents services</i></p><br><br><br>
+    <div class="post">Billetterie<br><br><br><br><br><img src="https://i.ibb.co/6RWPgqx2/Screenshot-20251124-235818.jpg" alt="" style="height:60px;width:100px;border-radius:10px;"></div>
+        <div class="post">Transaction<br><br><br><br><img src="https://i.ibb.co/cSVnZ53Y/Screenshot-20251125-000152.jpg" alt="" style="height:60px;width:100px;border-radius:10px;"></div>
+        <div class="post" style=""><p style="">service pressing</p><br><br><br><br><img src="https://i.ibb.co/qLZXqPT9/Screenshot-20251124-235234.jpg" alt="" style="height:60px;width:100px;border-radius:10px;"></div><a href="pressing.html">en savoir plus</a><br><br>
+        <div class="post">Mobilemoney<br><br><br><br><img src="https://i.ibb.co/yFD4Lvzx/Screenshot-20251124-235958.jpg" alt="" style="height:60px;width:100px;border-radius:10px;"></div>
+        <div class="post" style="text-align:center;">Assistance visa<br><br><br><br><img src="https://i.ibb.co/fGVhVMT0/Screenshot-20251123-051727.jpg" style="height:60px;width:100px;border-radius:10px;" alt=""></div> 
+        </div>
+        <!-- les contacts -->
+        <br><br>    <div class="section" id="contact" style="background :white;width:100%;height:auto;display:flex;flex-direction:column;align-items:center;box-shadow: 0 2px 4px rgba(0,0,0,0.1);"><br><br><p style="font-size:24px;color:red;font-weight:250;"><i>Contactez-nous sur:</i></p><br><br>
+        <img src="https://i.ibb.co/0VXhzcBm/Screenshot-20251125-002408.jpg" alt="" style="height:60px;width:100px;border-radius:10px;"><p style="color:green;">+243 822 601 336 </p><p>Ou sur +243 890 050 471</p><br><br><br><br><img src="https://i.ibb.co/DDPfXSfM/Screenshot-20251125-002522.jpg" alt="" style="height:60px;width:100px;border-radius:10px; background :white;"><p style="color:blue;">kyango service</p><br><br><br><br><br><img src="https://i.ibb.co/WmcrtfD/Screenshot-20251124-220457.jpg" style="height:100px;width:100px;border-radius:10px;" alt=""><br><p style="color:red;">Adresse: intendance générale,à côté de TMB/Kinshasa/lemba (c)</p></div>
+        
+        
+        </main>
+        <br><br><br><br><br>
+    <footer style="width:100%; background :white;display:flex;font-size:12px;text-align:center;"><i><br><br><br>copyright © 2025<br>web dveloppement<br>Hébergement du programme avec <strong>Github</strong> pour la présentation d'une entreprise.<br><a href="#">Apprendre à programmer : débuter avec HTML et CSS.</a><br>Designed by <strong>léon BOTOLO</strong><br><br></i></footer>
+    
+  <!-- menu humberger -->  
+   
+
+    
+    
+    
+    
+  
+
+   
+</body>
+<script>
+    /* pour afficher le menu humberger */
+const menu = document.getElementById("menu");
+const btn = document.getElementById("menuBtn");
+
+btn.addEventListener("click", () => {
+  if (menu.style.maxHeight) {
+    menu.style.maxHeight = null; // Fermer
+  } else {
+    menu.style.maxHeight = menu.scrollHeight + "px"; // Ouvrir
+  }
+});
+
+/* pour masquer les autres éléments */
+const links = document.querySelectorAll('.menu-link');
+const sections = document.querySelectorAll('.section');
+
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    // 1. Masquer toutes les sections
+    sections.forEach(sec => sec.style.display = 'none');
+
+    // 2. Récupérer la section cible
+    const target = link.getAttribute('data-target');
+    document.getElementById(target).style.display = 'flex';
+  });
+});
+</script>
+</html>
