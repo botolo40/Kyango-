@@ -6,15 +6,18 @@
     <title>Titre de la page</title>
 </head>
 <Style >
+   
     body,html{
        
         Padding:0;
         margin:0;
     }
     
-    body{
-        width:auto;
-    }
+ .wrapper {
+    max-width: 900px; /* largeur normale */
+    margin: 0 auto;   /* centre la page */
+    width: 100%;      /* pour s'adapter au téléphone */
+} 
     
     main{
         display :flex;
@@ -193,9 +196,45 @@ bottom:80px;
   color: white;
   text-decoration: none;
 }
+ #image-slider {
+    text-align: center;
+    position: relative;
+}
+
+.image-container {
+    overflow: hidden; /* Cache les images qui débordent */
+    width: 100%;
+    height: 300px; /* Ajustez la hauteur */
+    position: relative;
+}
+
+.image-slide {
+    display: none; /* Cache toutes les images par défaut */
+    position: absolute;
+    width: 100%;
+}
+
+.image-slide.active {
+    display: block; /* Affiche l'image active */
+}
+
+.image-slide img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+ 
 </Style>
 <body>
-    <header><p style="border-bottom:4px solid orange;">M<i>angaCreatorZone</i></p><img src="https://i.ibb.co/RG2CXz7c/IMG-20251204-WA0004.jpg" alt="" style="width:100%;height:350px;"> <div id="leon"><p style="position :relative;top:30%;"><strong>M</strong>anga<br><strong>C</strong>reator<br><strong>Z</strong>one</p></div>
+  <div class="wrapper">
+
+    <header><p style="border-bottom:4px solid orange;">M<i>angaCreatorZone</i></p><img src="https://i.ibb.co/35ZcCT2L/IMG-20251208-WA0015.jpg" alt="" style="width:90%;height:350px;"> <div id="leon"><p style="position :relative;top:30%;"><strong>M</strong>anga<br><strong>C</strong>reator<br><strong>Z</strong>one</p></div>
  <div class="" id="open" >☰</div>
   
      
@@ -231,7 +270,23 @@ bottom:80px;
    
     <!-- 1ere publication -->
     <div  style="display:flex;flex-direction:column;align-items:center;">
-    <h1>Personnages</h1><div id="lui" class="div"><img src="https://i.ibb.co/jPYybXD4/IMG-20251204-WA0005.jpg" style="width:100%;height:280px;" alt=""><br><br><br><br><p>Mangas faits à la main avec tous les soins possibles pour la jouissance de votre vue .</p></div><br><div style="display:flex;flex-direction:line;align-items:center;"><div id="demo"><Button class="cont" id="lea" onclick="myTime()" >j'aime</Button></div></div><br><button id="lava"></button>
+    <h1>Personnages</h1><div id="lui" class="div">
+        <div class="image-container">
+        <div class="image-slide active"><img src="https://i.ibb.co/jPYybXD4/IMG-20251204-WA0005.jpg" alt="Image 1"></div>
+        <div class="image-slide"><img src="https://i.ibb.co/0jfHpKTH/IMG-20251208-WA0012.jpg" alt="" style="height:300px;width:140px;"></div>
+        <div class="image-slide"><img src="https://i.ibb.co/35ZcCT2L/IMG-20251208-WA0015.jpg" alt="Image 3"></div>
+    </div>
+    
+
+  <button id="prev-btn">Précédent</button>      
+        
+        <button id="next-btn">Suivant</button>
+        
+        
+        
+        
+        
+        <br><br><br><br><p>Mangas faits à la main avec tous les soins possibles pour la jouissance de votre vue .</p></div><br><div style="display:flex;flex-direction:line;align-items:center;"><div id="demo"><Button class="cont" id="lea" onclick="myTime()" >j'aime</Button></div></div><br><button id="lava"></button><br><br>
     
   <br><br><br><br>  <br><br><br><br><br>
   
@@ -255,22 +310,18 @@ bottom:80px;
     
 <!-- 3eme publication -->    
     <h3></h3>
-        <div class="div"><img src="https://i.ibb.co/VY8zQKw1/IMG-20251204-WA0008.jpg" style="width:100%;height:320px;" alt=""><br><br><br><br>Divers personnages,si vous voulez des bandes dessinées Jeunesse et personnelles.<br><br></div><br><div style="display:flex;flex-direction:line;align-items:center;"><Button class="cont" id="derma" onclick="yourTime()" style="position:relative;bottom:430px;left:80px;">j'aime</Button><div>
+        <div class="div"><img src="https://i.ibb.co/VY8zQKw1/IMG-20251204-WA0008.jpg" style="width:100%;height:320px;" alt=""><br><br><br><br>Divers personnages,si vous voulez des bandes dessinées Jeunesse et personnelles.<br><br></div><br></div>
    <br> 
    
    <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>
    <!-- Nous contacter -->
   <div>
    <h7 style="font-size:25px;color:orange;">Nos contacts</h7><br><br>
-   <div style=" border:1px solid #ddd;border-radius: 8px;box-shadow: 0 2px 4px rgba(0,0,0,0.1);width:320px; position :relative;right:50px;"><br><br><br><p style="font-weight:360;"><i>contactez-nous avec le numéro suivant :</i></p><br><br>📞+243 842 302 080</p><br>      <img src="https://i.ibb.co/0VXhzcBm/Screenshot-20251125-002408.jpg" alt="" style="height:60px;width:100px;border-radius:10px;position :relative;left:200px;bottom:80px;"><p style="color:green;position :relative;left:190px;bottom:100px;">+243 842 302 080</p><i style="font-weight:350;">contactez pour plus d'informations et services !</i><br><br><br></div>
-   </div>
+   <div style=" border:1px solid #ddd;border-radius: 8px;box-shadow: 0 2px 4px rgba(0,0,0,0.1);width:320px; position :relative;left:10px;"><br><br><br><p style="font-weight:360;"><i>contactez-nous avec le numéro suivant :</i></p><br><br>📞+243 842 302 080</p><br>      <img src="https://i.ibb.co/0VXhzcBm/Screenshot-20251125-002408.jpg" alt="" style="height:60px;width:100px;border-radius:10px;position :relative;left:200px;bottom:80px;"><p style="color:green;position :relative;left:190px;bottom:100px;">+243 842 302 080</p><i style="font-weight:350;">contactez pour plus d'informations et services !</i><br><br><br></div>
+   </div></div>
    <br><br><br><br><br><br><br> 
 
- <!-- la notification -->  
- <div id="avertissement" class="avert">
-  <p>vous avez aimé la publication .</p>
-  <button id="closeBtn">OK</button></div>
-  
+ 
   
   
   
@@ -278,6 +329,10 @@ bottom:80px;
     </main>
 
 
+  <!-- la notification -->  
+ <div id="avertissement" class="avert">
+  <p>vous avez aimé la publication .</p>
+  <button id="closeBtn">OK</button></div>
   
     
   
@@ -285,7 +340,7 @@ bottom:80px;
 
 <footer style="width:100%; background :white;display:flex;font-size:12px;text-align:center;"><i><br><br><br>copyright © 2025<br>web developpement<br>Hébergement du programme avec <strong>Github</strong> pour la présentation d'une entreprise.<br><a href="#">Apprendre à programmer : débuter avec HTML et CSS.</a><br>Designed by <strong>léon BOTOLO</strong><br><br></i></footer>
     
-  
+ </div> 
 </body>
 
 <script >
@@ -303,7 +358,7 @@ setTimeout(() => {
 
 // Bouton pour fermer
 document.getElementById("closeBtn").onclick = () => {
-  document.getElementById("avertissement").style.bottom = "-300px";
+  document.getElementById("avertissement").style.bottom = "-200px";
 };
 
 
@@ -340,7 +395,7 @@ setTimeout(() => {
 
 // Bouton pour fermer
 document.getElementById("closeBtn").onclick = () => {
-  document.getElementById("avertissement").style.bottom = "-300px";
+  document.getElementById("avertissement").style.bottom = "-200px";
 };
 
     
@@ -351,29 +406,7 @@ document.getElementById("closeBtn").onclick = () => {
     
     
     
-    
-    //fonction pour la 3eme publication 
-    
-    function yourTime(){
-        document.getElementById("derma").style.display="none";
-        aril.textContent="👍";
-       
-    
-    
-   
-   //pour afficher une notification lorsque le client aime la publication
-   // Affiche après 3 secondes
-setTimeout(() => {
-  document.getElementById("avertissement").style.bottom = "0";
-},1000);
 
-// Bouton pour fermer
-document.getElementById("closeBtn").onclick = () => {
-  document.getElementById("avertissement").style.bottom = "-300px";
-};
-
- yourTime();
-}
     
 
    
@@ -386,6 +419,42 @@ document.getElementById("closeBtn").onclick = () => {
 
   
 
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.image-slide');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+    }
+
+    nextBtn.addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % slides.length; // Avance au suivant, revient au début
+        showSlide(currentSlide);
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Recule, revient à la fin
+        showSlide(currentSlide);
+    });
+
+    // Afficher la première image au chargement
+    showSlide(currentSlide);
+});
+
+
+
+
+
+
 const menu = document.getElementById("menu");
 const btn = document.getElementById("open");
 
@@ -396,9 +465,6 @@ btn.addEventListener("click", () => {
     menu.style.maxHeight = menu.scrollHeight + "px"; // Ouvrir
   }
 });
-
-
-
 
 </script>
 </html>
