@@ -2,469 +2,248 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Titre de la page</title>
+    <meta charset="UTF-8">
+    <title>Page title</title>
 </head>
-<Style >
-   
-    body,html{
-       
-        Padding:0;
+<style>
+    html,body{
         margin:0;
-    }
-    
- .wrapper {
-    max-width: 900px; /* largeur normale */
-    margin: 0 auto;   /* centre la page */
-    width: 100%;      /* pour s'adapter au téléphone */
-} 
-    
-    main{
-        display :flex;
-        flex-direction:column;
-        align-items:center;
-       display: flex;
-    
-
-   
-      background: white;
-  
-    
-     
-
-    }
-    .div{
-        border:1px solid #ddd;
-        border-radius:10px;
-        text-align:center;
-        width:85%;
-        height:auto;
-        font-weight:300;
-        font-size:14px;
- 
-    }
-    /* 1ere publication*/
-    #leo{
-        position :relative;
-        left:25%;
+        padding:0;
     }
     header{
-    
-        height:65px;
+        width:100%;
+        background:url('https://i.ibb.co/zhHg9hkb/IMG-20251204-WA0007.jpg');
+        height:400px;
+        opacity:;
         text-align:center;
         
     }
-    .cont{
-        background : orange ;
-        border-radius:8px;
-        width:100px;
-    }
-    /* Première publication*/
-    #lea{
-        position :relative;
-        right:30px;
-    }
-    
-    /* pour la deuxième publication */
-    #derm{
-        position :relative;
-        right:30px;
+    #man{
         
     }
+    .division{
+        width:85%;
+        height:;
+        background:white;
+        box-shadow:0px 2px 4px rgba(0,0,0,0.1);
+        font-size:16px;
+        color:gray;
+        border-top:30px solid #E6C200;
+        border-radius:10px;
+    } 
     
-    /* 3eme publication */
-    #aril{
-        position :relative;
-        right:30px;
+ .division:hover{
+     transform:scale(1.1);
+ }  
+    
+    
+    
+    
+    main{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        flex-wrap:wrap;
     }
-    #lava{
-            position :relative;
-        left:25px;
-        background :white;
+    .image{
+        width:100%;
+        height:220px;
         border:1px solid #ddd;
-        color:red;
     }
-    
-   /* pour la notification */ 
-   
-       .avert {
-  position: fixed;
-  bottom: -300px; /* caché au début */
-  left: 0;
-  width: 100%;
-  background:white ;
-  color: orange ;
-  padding: 10px;
-  height:60px;
-  text-align: center;
-  transition: bottom 0.5s ease;
-  font-family: Arial;
-  border :1px solid orange;
-}
-
-.avert button {
-position :relative;
-bottom:15%;
- margin-top:-10px;
-  padding: 10px 20px;
-  border: none;
-  background: #f1c40f;
-  cursor: pointer;
-  border-radius: 5px;
-  height:30px;
-}
-
-#moi{
+   body {
+       background:#f2f2f2;
+   }
+   #long{
+     width:85%;
+        height:;
+        background:white;
+        box-shadow:0px 2px 4px rgba(0,0,0,0.1);
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        flex-wrap:wrap;
+       
+   }
+   .rr{
+       width:85%;
+        height:;
+        background:white;
+        box-shadow:0 2px 4px rgba(0,0,0,0.1);
+        font-size:18px;
+        color:gray;
+        text-align:center;
+        border:1px solid #f2f2f2;
+        border-bottom:30px solid #f2f2f2;
+   }
+   .rr img{
+       clip-path:circle(50% at 50% 50%);
+       width:130px;
+       height:130px;
+  
+   }
+   footer{
+       width:100%;
+       background:#1c1c1e;
+       display:flex;
+        flex-direction:column;
+        align-items:center;
+        flex-wrap:wrap;
+        color:#f2f2f2;
+   }
+   #moi{
    border:1px solid #ddd;
     background :#f2f2f2;
    border-radius: 8px;
    box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align:center;
    width:95%;
+
+}
+
+#scroll{
+    display:flex;
+    overflow-y:hidden;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    width:100%;
+    height:320px;
  
+    align-items: center;
 }
-   #leon{
-      
-  width: 130px;
-  height: 130px;
-  clip-path: circle(50% at 50% 50%);
-      box-shadow:0 2px 4px rgba(0,0,0,0.1);
-      background :orange;
-      text-align:center;
-      animation-name:keepIt;
-      transform-origin:right;
-    animation-duration: 1s; /* Durée de l'animation */
-    animation-delay: 1s;  /* Démarre 3s après l'application */
-    animation-fill-mode: forwards; /* Pour garder le style final */
-
-position :relative;
-bottom:80px;
-   
-      
-    } /* animation de la boule */
-    @keyFrames keepIt{
-        from{transform:rotate(0deg);}
-        to{transform:rotate(360deg);}
-    }
+.in{
+scroll-snap-align:start ; 
+flex-shrink:0;
+ width:200px;
+    height:270px;
+    border-radius:20px;
+    color:#1c1c1e;
+    font-size:18px;
     
-    #com{
-        animation-name:comLeo;
-         animation-duration: 4s; /* Durée de l'animation */
-    animation-delay: 5s;  /* Démarre 3s après l'application */
-
-    animation-fill-mode: forwards; /* Pour garder le style final */
     
-    animation-iteration-count:infinite;
-    
-    }
-    @keyFrames comLeo{
-       0%{background-image:url('https://i.ibb.co/VY8zQKw1/IMG-20251204-WA0008.jpg');}
-        50%{background-image:url('https://i.ibb.co/RG2CXz7c/IMG-20251204-WA0004.jpg');}
-        75%{background-image:url('https://i.ibb.co/zhHg9hkb/IMG-20251204-WA0007.jpg');}
-        100%{background-image:url('https://i.ibb.co/jPYybXD4/IMG-20251204-WA0005.jpg');}
-    }
-    #close{
-        color:red;
-        position :relative;
-        
-    }
-    
-    #open{
-        position :relative;
-        left:150px;
-        bottom:555px;
-        font-size:25px;
-        cursor:pointer;
-    }
-    nav {
-       
-  background: #444;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  position :relative;
-  bottom:550px;
-  width:45%;
-  left:190px;
-  
-  
-
-    }
-    
-   nav a {
-  display: block;
-  padding: 15px;
-  color: white;
-  text-decoration: none;
 }
- #image-slider {
-    text-align: center;
-    position: relative;
+.go{
+    width:100%;
+    height:95%;
+   border-radius:15px;
 }
-
-.image-container {
-    overflow: hidden; /* Cache les images qui débordent */
-    width: 100%;
-    height: 300px; /* Ajustez la hauteur */
-    position: relative;
+.moi{
+    width:100%;
 }
-
-.image-slide {
-    display: none; /* Cache toutes les images par défaut */
-    position: absolute;
-    width: 100%;
-}
-
-.image-slide.active {
-    display: block; /* Affiche l'image active */
-}
-
-.image-slide img {
-    width: 100%;
-    height: auto;
-}
-
-button {
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-}
-
- 
-</Style>
+</style>
 <body>
-  <div class="wrapper">
-
-    <header><p style="border-bottom:4px solid orange;">M<i>angaCreatorZone</i></p><img src="https://i.ibb.co/35ZcCT2L/IMG-20251208-WA0015.jpg" alt="" style="width:90%;height:350px;"> <div id="leon"><p style="position :relative;top:30%;"><strong>M</strong>anga<br><strong>C</strong>reator<br><strong>Z</strong>one</p></div>
- <div class="" id="open" >☰</div>
+    <header></header><h1 style="position:absolute; text-alig:center;color:orange; font-weight:800;top:4%; font-size:75px;">Manga<br>Zone<br>Creator</h1>
+    <br><br><br><br>
+  <main>
   
-     
+  
+  <div style="border-radius:15px;border:1px solid #ddd; text-align:center; color:#1c1c1e;width:80%; height:200px;"><br><br><a href="#">Development web:site manga.<br>MangaZoneCreator<br><br>Développé en:<p id="toi"></p></a></div>
+ <br><br>
+ 
+ <h3>Personnages manga</h3>
+ 
+ <br>     
+      <!-- first div-->
+      <div class="division">
+          <br>
+          <img src="https://i.ibb.co/35ZcCT2L/IMG-20251208-WA0015.jpg" alt="" class="image">
+          <br><br>
+          Mangas faits à la main avec tous les soins possibles pour la jouissance de votre vue .<br><br>
+      </div>
+      <br><br><br><br>
+      <!-- 2nd div -->
+      <div class="division">
+          <br>
+          <img src="https://i.ibb.co/VY8zQKw1/IMG-20251204-WA0008.jpg" alt="" class="image"><br><br>
+    Des personnages des B.D dessinés à votre description et goût.      
+          <br><br>
+      </div>
+      <br><br><br><br>
+      <!-- 3rd div -->
+      <div class="division">
+          <br>
+          <img src="https://i.ibb.co/jPYybXD4/IMG-20251204-WA0005.jpg" alt="" class="image"><br><br>Divers personnages,si vous voulez des bandes dessinées Jeunesse et personnelles.<br><br></div><br><br><br>
           
-<nav id="menu">
-    <br><br><br>
-  <a href="index.html">Accueil</a>
-  <a href="www.facebook.com"  >Facebook</a>
-  <a href="https://wa.me/243842302080" >WhatsApp</a>
-</nav>
+          
+          <p>Ce n'est pas encore fini avec nos incroyables dessins</p>
+          <hr class="moi"><br>
+          
+  <!-- scrollable -->  
+  <div id="scroll">
+    <br><br>  
+      <!-- img 1 -->
+      <div class="in" style ="position:relative;left:10px;"> <img  class="go" src="https://i.ibb.co/pvq9kn7Y/IMG-20260114-WA0010.jpg" alt="">Créativité</div>
+      <!-- img 2 -->
+      <div class="in" style ="position:relative;left:30px;" ><img class="go" src="https://i.ibb.co/27D0FQJv/IMG-20260114-WA0005.jpg" alt="">incontournable</div>
+      <!-- 3rd -->
+      <div class="in" style ="position:relative;left:60px;" ><img class="go" src="https://i.ibb.co/LXpWScQ9/IMG-20260114-WA0013.jpg" alt="">Conquête</div>
+      <!-- 4rd -->
+      <div class="in" style ="position:relative;left:90px;"><img class="go" src="https://i.ibb.co/d0N3ZjC3/IMG-20260114-WA0003.jpg" alt="">Artistique</div>
+      <!-- 5th -->
+      <div class="in" style ="position:relative;left:120px;" ><img class="go" src="https://i.ibb.co/chzPSBS3/IMG-20260114-WA0007.jpg" alt="">Compétition</div>
+      <!-- 6th -->
+      <div class="in" style ="position:relative;left:150px;" ><img class="go" src="https://i.ibb.co/fzPfrv0n/IMG-20260114-WA0000.jpg" alt="">Exposition </div>
 
 
 
-
-    </header>
-    <main><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-  <div id="moi"><h1><i>Qu'est ce que <b style="color:orange;">MangaCreatorZone</b>?</i></h1><i style="font-weight:350;">
+  </div>      
+          
+    <hr class="moi">    <br><br>
+    
+    <p style="color: blue;">Nos dessins sont faits à la main,avec expertise.</p> <br>
+    <a href="https://wa.me/243842302080">Tu veux avoir ta propre BD?</a> 
+          
+          
+        <br><br><br>  
+          
+         <!-- long div -->
+          <div id="long">
+              <br><br><br>
+              <!-- 1st div for long div-->
+           <div class="rr"><br> 
+            <img src="https://i.ibb.co/1tDXqMRC/IMG-20260113-200032-786.jpg"  alt=""> <br><br><br>Magazonecreator,<br>
+            vous réalise des œuvres 
+           <br><br><br>   </div>
+              
+              <br><br><br>
+              
+              <!-- 2nd div for long div--><div class="rr"><br>
+                  <img src="https://i.ibb.co/gL0vnVtR/IMG-20260113-200311-857.jpg" alt="">
+           <br><br><br> Design et style approprié<br>: expérience<br><br></div>
+            <br><br><br><br>  
+            
+              <!-- 3rd div -->
+              <div class="rr"><br>
+                  <img src="https://i.ibb.co/x85ZjfRm/IMG-20260114-WA0012.jpg" alt="">
+           <br><br><br>imagination à l'œuvre artistique<br><br></div>
+            <br><br><br>
+              
+              
+              </div><br><br><br><br>
+              
+           
+           
+           
+             <!-- about us --> 
+              <div id="moi"><h1><i>Qu'est ce que <b style="color:orange;">MangaCreatorZone</b>?</i></h1><i style="font-weight:350;">
   Comme indiqué par son nom, <b style="color:orange;">MangaCreatorZone</b> est une place de création d'oeuvres artistiques personnalisée pour des fins de divertissement et plaisir visuel.
   <br><br><br>
   Dans ce site nous vous donnons une petite aperçue de ce que nous réalisons réellement et à mains nues pour pousser votre curiosité plus loin.
   <br><br><br>
   Les quelques articles présentés ont été soigneusement sélectionnés pour vous.
   <br><br>
-  <br><br>Et pour finir, contactez-nous pour vos dessins et oeuvres que aimeriez réaliser:un portrait pour votre anniversaire,des dessins personnalisés,...</i><br><br><br></div>
-
-   <br><br><br><br><br><br><br><br>   <h5 style="color:orange;font-size:25px;text-decoration:underline;"><i>Nos réalisations artistiques</i></h5>
-    <br><br><div style="text-align:center;"><p style="font-weight:350;font-size:13px;">Voici un échantillon des réalisations artistiques de <i style="color:orange;">MangaZoneCreator</i>:</p></div><br><br>
-   
-
-   
-   
-   
-    <!-- 1ere publication -->
-    <div  style="display:flex;flex-direction:column;align-items:center;">
-    <h1>Personnages</h1><div id="lui" class="div">
-        <div class="image-container">
-        <div class="image-slide active"><img src="https://i.ibb.co/jPYybXD4/IMG-20251204-WA0005.jpg" alt="Image 1"></div>
-        <div class="image-slide"><img src="https://i.ibb.co/0jfHpKTH/IMG-20251208-WA0012.jpg" alt="" style="height:300px;width:140px;"></div>
-        <div class="image-slide"><img src="https://i.ibb.co/35ZcCT2L/IMG-20251208-WA0015.jpg" alt="Image 3"></div>
-    </div>
-    
-
-  <button id="prev-btn">Précédent</button>      
-        
-        <button id="next-btn">Suivant</button>
-        
-        
-        
-        
-        
-        <br><br><br><br><p>Mangas faits à la main avec tous les soins possibles pour la jouissance de votre vue .</p></div><br><div style="display:flex;flex-direction:line;align-items:center;"><div id="demo"><Button class="cont" id="lea" onclick="myTime()" >j'aime</Button></div></div><br><button id="lava"></button><br><br>
-    
-  <br><br><br><br>  <br><br><br><br><br>
+  <br><br>Et pour finir, contactez-nous pour vos dessins et oeuvres que aimeriez réaliser:un portrait pour votre anniversaire,des dessins personnalisés,...</i><br><br><br></div><br><br><br><br>
   
-  <!-- 2eme publication -->
-  <h2>B.D</h2>
-    <div class="div"><img src="https://i.ibb.co/zhHg9hkb/IMG-20251204-WA0007.jpg" style="width:100%;height:320px;" alt=""><br><br><br><br><br>Des personnages des B.D dessinés à votre description et goût.<br><br></div><br><div style="display:flex;flex-direction:line;align-items:center;"><div id="arol" ><Button class="cont" id="derm" onclick="myTeam()" >j'aime</Button></div><div></div></div><br><br><br><br><br>
-    
-    
-    
-   <br><br><br>
-   
-   
-   <br><br><br><br><br><br><br><br><br><br><br>
-  <!-- bcp d'images -->  
-    <div style="border:3px solid #ddd;width:95%;height:380px;border-radius:8px;"id="com">
-    </div>
-   
-   </div>
-  <br><br><br><br><br><br><br><br><br><br>
-    
-    
-<!-- 3eme publication -->    
-    <h3></h3>
-        <div class="div"><img src="https://i.ibb.co/VY8zQKw1/IMG-20251204-WA0008.jpg" style="width:100%;height:320px;" alt=""><br><br><br><br>Divers personnages,si vous voulez des bandes dessinées Jeunesse et personnelles.<br><br></div><br></div>
-   <br> 
-   
-   <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>
-   <!-- Nous contacter -->
-  <div>
-   <h7 style="font-size:25px;color:orange;">Nos contacts</h7><br><br>
-   <div style=" border:1px solid #ddd;border-radius: 8px;box-shadow: 0 2px 4px rgba(0,0,0,0.1);width:320px; position :relative;left:10px;"><br><br><br><p style="font-weight:360;"><i>contactez-nous avec le numéro suivant :</i></p><br><br>📞+243 842 302 080</p><br>      <img src="https://i.ibb.co/0VXhzcBm/Screenshot-20251125-002408.jpg" alt="" style="height:60px;width:100px;border-radius:10px;position :relative;left:200px;bottom:80px;"><p style="color:green;position :relative;left:190px;bottom:100px;">+243 842 302 080</p><i style="font-weight:350;">contactez pour plus d'informations et services !</i><br><br><br></div>
-   </div></div>
-   <br><br><br><br><br><br><br> 
-
- 
+  </main>
+  <footer><br><br><br><div style="display:flex; flex-direction:line;"><a href="https://api.whatsapp.com/send?text=Viens%20voir%20mon%20site%20:%20https://botolo40.github.io/new time" style="text-decoration:none;"  onclick="go()"><img src="https://i.ibb.co/RTgC8bnm/1944502.png" alt="" style="width:30px;height:30px; background:white;clip-path:circle(50% at 50% 50%);"></a>
   
-  
-  
-      
-    </main>
-
-
-  <!-- la notification -->  
- <div id="avertissement" class="avert">
-  <p>vous avez aimé la publication .</p>
-  <button id="closeBtn">OK</button></div>
-  
-    
-  
-   <br><br><br><br><br><br><br><br><br><br><br>
-
-<footer style="width:100%; background :white;display:flex;font-size:12px;text-align:center;"><i><br><br><br>copyright © 2025<br>web developpement<br>Hébergement du programme avec <strong>Github</strong> pour la présentation d'une entreprise.<br><a href="#">Apprendre à programmer : débuter avec HTML et CSS.</a><br>Designed by <strong>léon BOTOLO</strong><br><br></i></footer>
-    
- </div> 
+<a href="tel:" style="text-decoration:none; position:relative;left:10px;" ><img src="https://i.ibb.co/C5hDb54V/126509.png" alt="" style="width:30px;height:30px; background:white;clip-path:circle(50% at 50% 50%);"></a>
+</div><br>
+Let's develop skills for future 
+      <p>copyright ©️ <b id="lui" style="color: white;"></b></p>web development <br><a href="tel:+243832151402" style="color:#ddd;">Designed by:Léon BOTOLO</a><br><br>
+  </footer>
 </body>
-
-<script >
-    //fonction pour la 1ere publication 
-    const bouton=document.getElementById("lava");
+<script>
+    document.getElementById("toi").textContent=new Date().getFullYear();
     
-    function myTime() {  document.getElementById("lea").style.display="none";
-  
-    demo.textContent="👍";
-  
-   // Affiche après 1 secondes
-setTimeout(() => {
-  document.getElementById("avertissement").style.bottom = "0";
-},1000);
-
-// Bouton pour fermer
-document.getElementById("closeBtn").onclick = () => {
-  document.getElementById("avertissement").style.bottom = "-200px";
-};
-
-
-
-
-
-
-
-
-
-    
-    myTime();
-    }
-      //Rafficher le bouton j'aime
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    //fonction pour la 2eme publication 
-    
-    function myTeam(){
-        document.getElementById("derm").style.display="none";
-        arol.textContent="👍";
-        // Affiche après 3 secondes
-setTimeout(() => {
-  document.getElementById("avertissement").style.bottom = "0";
-},1000);
-
-// Bouton pour fermer
-document.getElementById("closeBtn").onclick = () => {
-  document.getElementById("avertissement").style.bottom = "-200px";
-};
-
-    
-
-        myTeam();
-    }
-    
-    
-    
-    
-
-    
-
-   
-   let maille=document.getElementById("demo");
-   
-   
-
-//menu hamburger
-
-
-  
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.image-slide');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-    let currentSlide = 0;
-
-    function showSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        slides[index].classList.add('active');
-    }
-
-    nextBtn.addEventListener('click', () => {
-        currentSlide = (currentSlide + 1) % slides.length; // Avance au suivant, revient au début
-        showSlide(currentSlide);
-    });
-
-    prevBtn.addEventListener('click', () => {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Recule, revient à la fin
-        showSlide(currentSlide);
-    });
-
-    // Afficher la première image au chargement
-    showSlide(currentSlide);
-});
-
-
-
-
-
-
-const menu = document.getElementById("menu");
-const btn = document.getElementById("open");
-
-btn.addEventListener("click", () => {
-  if (menu.style.maxHeight) {
-    menu.style.maxHeight = null; // Fermer
-  } else {
-    menu.style.maxHeight = menu.scrollHeight + "px"; // Ouvrir
-  }
-});
-
+    document.getElementById("lui").textContent=new Date().getFullYear();
 </script>
 </html>
